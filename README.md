@@ -1,4 +1,5 @@
-angular open weather test 
+# angular open weather test 
+
 in order to get list of the location orinated to autocompelete datalist 
 
 please run instllation ->
