@@ -1,0 +1,18 @@
+<div class="error-top" *ngIf="errorMessage">{{ errorMessage }}</div>
+<div class="wrap flex center">
+    <div class="select">
+        <input list="dataList" tabindex="0" autofocus    class="form-control" [(ngModel)]="choosenCity" (focus)="focusCity($event)" placeholder="choose location">
+        <datalist id="dataList"   >
+            <option *ngFor="let item of cities$ | async">{{item.name}}</option>
+        </datalist>
+    </div>
+    <div class="select">
+        <input list="units" [(ngModel)]="choosenUnits" class="form-control" placeholder="units" (focus)="focusUnits($event)" />
+        <datalist name="tempruture" id="units">
+            <option *ngFor="let item of units">{{item}}</option>
+        </datalist>
+    </div>
+    <button class="plus fa" (click)="showWeather()">
+    </button>
+
+</div>

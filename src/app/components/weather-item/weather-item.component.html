@@ -1,0 +1,14 @@
+<div class="col-sm-4 col-lg-4 relative mr-l">
+    <aside class="close fa" (click)="removeForcast()"></aside>
+    <h4>{{weather.name}}</h4>
+    <div class="content">
+        <p>temp: <span>{{weather?.main.temp}}</span></p>
+        <aside *ngFor="let item of weather?.weather">
+            <p><span>{{item.main}}</span></p>
+            <p><span>{{item.description}}</span></p>
+            <img src="http://openweathermap.org/img/wn/{{item.icon}}@2x.png" alt="{{item.icon}}" />
+        </aside>
+        
+    </div>
+
+</div>

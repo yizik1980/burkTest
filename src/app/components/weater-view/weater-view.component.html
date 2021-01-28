@@ -1,0 +1,5 @@
+<div class="container">
+    <div class="row center">
+        <app-weather-item  *ngFor="let item of weathers$ | async" [weather]="item"></app-weather-item>
+    </div>
+</div>
