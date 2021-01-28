@@ -6,9 +6,9 @@ please run instllation ->
 
 # npm install -g json-server
 
-After the installation ends in order to run it write down this command
+After the installation ends, in order to run it write down this command 
 
 # json-server --watch city.json
 
-at the folder of app where the city.json are located
+at the root folder of the app where the city.json are located
 
